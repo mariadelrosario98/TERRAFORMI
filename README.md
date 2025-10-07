@@ -16,12 +16,8 @@ Este repositorio contiene múltiples carpetas, cada una con un módulo de Terraf
 
 ## 🚀 Instrucciones Generales de Ejecución
 
-En cada carpeta se incluye:
-
-- Código Terraform modular.
-- Instrucciones de ejecución en un archivo `README.md` local.
-- Comandos necesarios para instalar los paquetes requeridos.
-- Pantallazo de validación: evidencia visual de que la instalación fue correcta.
+- Código Terraform modular en cada carpeta
+- Pantallazo de validación: evidencia visual de que la instalación fue correcta en el word que se encuentra en la carpeta general.
 
 ---
 
@@ -83,16 +79,6 @@ aws emr list-instances --cluster-id <cluster-id> --instance-group-types MASTER -
 
 
 aws ssm start-session --target <instance-id>
-
----
-
-## 📸 Evidencias
-
-Cada carpeta contiene una imagen (pantallazo) que valida:
-
-- La instalación correcta de cada herramienta (pandas, polars, duckdb, spark).
-- La conexión exitosa vía SSM.
-- En el caso del EMR, la conexión al nodo master y ejecución de comandos Spark.
 
 ---
 
